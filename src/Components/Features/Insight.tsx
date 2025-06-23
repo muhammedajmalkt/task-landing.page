@@ -19,12 +19,9 @@ const Insight = () => {
     <div className="my-28 w-3/4 mx-auto text-center scrollbar-hidden" id="faq">
       
       <button className="   border border-yellow-500/10 bg-yellow-500/10 text-primary p-2  px-4 rounded-b-4xl rounded-t-4xl flex  justify-center items-center gap-2 w-fit mx-auto">
-        {" "}
-        Insight{" "}
+        Insight
       </button>
-      <h2 className="flex  flex-col leading-16 mb-18 mt-4 ">
-        {" "}
-        
+      <h2 className="flex  flex-col leading-16 mb-18 mt-4 ">        
         Frequently asked <span> questions</span>{" "}
       </h2>
 

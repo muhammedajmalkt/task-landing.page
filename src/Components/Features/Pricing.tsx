@@ -15,11 +15,11 @@ const Pricing = () => {
       </h2>
 
 
-      <div className="w-11/12 flex justify-between mt-10  gap-4">
-        <div className="bg-[#141414] rounded-4xl border border-[#414141] p-8 w-1/3">
+      <div className="w-11/12 flex lg:flex-row flex-col justify-between mt-10  gap-4">
+        <div className="bg-neutral rounded-4xl border border-neutral-700 p-8 lg:w-1/3  w:full">
           <div>
             <p className="text-[#696767]">STANDARD</p>
-            <h2 className="text-3xl py-4 flex items-end ">
+            <h2 className="text-1xl py-4 flex items-end ">
               $2,150 <span className="text-sm">/month</span>
             </h2>
             <p className="underline-offset-1 py-5 text-sm">
@@ -82,7 +82,7 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="bg-[#141414] rounded-4xl border border-[#414141] p-8 w-1/3">
+        <div className="bg-neutral rounded-4xl border border-neutral-700 p-8 lg:w-1/3 w-full">
           <div>
             <p className="text-[#696767]">PRO</p>
             <h2 className="text-3xl py-4 flex items-end ">
@@ -147,9 +147,9 @@ Double the requests            </p>
             </button>
           </div>
         </div>
-        <div className="flex flex-col gap-4 w-1/3">
 
-          <div className="bg-neutral rounded-4xl border border-neutral-600 h-3/5 p-8">
+        <div className="flex  flex-col gap-4 lg:w-1/3  w-full">
+          <div className="bg-neutral rounded-4xl border border-neutral-700 h-3/5 p-8">
             <div className="flex flex-col gap-3 pb-4">
               <p className="text-[#696767]">PROJECT-BASED</p>
               <p className="text-[#ffffff] w-9/12 text-sm">
@@ -175,18 +175,18 @@ Double the requests            </p>
               </ul>
             </div>
 
-          <button className="mt-6 flex gap-2 rounded-4xl bg-neutral items-center text-white p-3 text-sm font-medium w-11/12 text-center border border-[#3c3c3c] justify-center">
+          <button className="mt-6 flex gap-2 rounded-4xl bg-neutral items-center text-white p-3 text-sm font-medium w-11/12 text-center border border-neutral-700 justify-center">
               Book a demo  
             </button>
           </div>
 
-          <div className="bg-neutral rounded-4xl border border-[#414141] h-2/5 pt-12  p-8">
+          <div className="bg-neutral rounded-4xl border border-neutral-700 h-2/5 pt-12  p-8">
             <h6 className="text-4xl ">Refer & earn</h6>
             <p className="text-white  text-sm">
               Recieve $150 for each refferal!
             </p>
 
-                      <button className="mt-6 flex gap-2 rounded-4xl bg-neutral items-center text-white p-3 text-sm font-medium w-11/12 text-center border border-[#3c3c3c] justify-center">
+                      <button className="mt-6 flex gap-2 rounded-4xl bg-neutral items-center text-white p-3 text-sm font-medium w-11/12 text-center border border-neutral-700 justify-center">
               Join now
             </button>
           </div>

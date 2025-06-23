@@ -26,7 +26,7 @@ const Benefits = () => {
               />
               <div className='text-start mt-6' >
                 <h4>{item.title}</h4>
-                <p className='text-neutral-600'>{item.disc}</p>
+                <p className='text-neutral-400'>{item.disc}</p>
                 </div >
               </div>
           ))}
