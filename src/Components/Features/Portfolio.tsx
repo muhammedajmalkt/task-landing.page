@@ -5,7 +5,7 @@ import React from "react";
 const data = [
   {
     image: "/Portfolio/portfolio1.png",
-    head: "Slipery moneys - e- commerce platform for high risk industries",
+    head: "Slipery moneys - e-commerce platform for high risk industries",
   },
   {
     image: "/Portfolio/portfolio2.png",
@@ -28,44 +28,49 @@ const data = [
     head: "Hyperbolic - a decentralized data transmission startup",
   },
 ];
+
 const Portfolio = () => {
   return (
-    <div className="mt-20 w-3/4 mx-auto scrollbar-hidden   " id="portfolio">
-      <button className="   border border-yellow-500/10 bg-yellow-500/10 text-primary p-2  px-4 rounded-b-4xl rounded-t-4xl flex  justify-center items-center gap-2">
-        {" "}
-        Portfolio{" "}
-      </button>
+    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="portfolio">
+      <div className="flex justify-center">
+        <button className="border border-yellow-500/10 bg-yellow-500/10 text-primary py-2 px-4 rounded-full text-sm font-medium mb-8">
+          Portfolio
+        </button>
+      </div>
 
-      <div className=" flex  justify-between mb-14">
-        <h2 className="flex  flex-col leading-16">
-          {" "}
-          Exceptional work<span> you deserve</span>{" "}
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-14">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-2xl">
+          Exceptional work <span className="block">you deserve</span>
         </h2>
-        <p className="w-96 content-end">
-          From tech startups to healthcare giants, e- commerce pioneers to
-          edtech, we've left our mark on diverse domains
+        <p className="text-gray-300  text-lg max-w-md md:text-start">
+          From tech startups to healthcare giants, e-commerce pioneers to edtech,
+          we've left our mark on diverse domains
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-3">
-        {data.map((item,_) => (
-          <div  key={_} className="group relative w-fit overflow-hidden rounded-3xl">
-            <Image
-              src={item.image}
-              alt="/portfolio"
-              className="w-[400px] h-[400px] rounded-3xl transition-transform duration-500 group-hover:scale-110"
-              width={500}
-              height={500}
-            />
-            <h4 className="relative bottom-22 w-[400px] px-8 ">{item.head}</h4>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {data.map((item, index) => (
+          <div key={index} className="group relative overflow-hidden rounded-3xl">
+            <div className="aspect-square overflow-hidden rounded-3xl">
+              <Image
+                src={item.image}
+                alt={item.head}
+                width={500}
+                height={500}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <h4 className="relative bottom-22 w-[400px] px-8  ">{item.head}</h4>
           </div>
         ))}
       </div>
 
-      <button className=" bg-primary p-2  text-black mt-10  px-4 rounded-b-4xl rounded-t-4xl flex justifye-center items-center gap-2 w-fit mx-auto">
-        See all works <ChevronRight size={18} className="" />
-      </button>
-    </div>
+      <div className="flex justify-center mt-12">
+        <button className="bg-primary hover:bg-primary/90 transition-colors text-black font-medium py-3 px-6 rounded-full flex items-center gap-2">
+          See all works <ChevronRight size={18} />
+        </button>
+      </div>
+    </section>
   );
 };
 
