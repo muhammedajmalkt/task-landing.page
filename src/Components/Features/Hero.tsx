@@ -19,7 +19,7 @@ const Hero = () => {
 
         {/* Main content */}
         <div className=" mx-auto">
-          <h1 className=" sm:text-5xl md:text-6xl leading-tight mb-6">
+          <h1 className=" sm:text-xl md:text-6xl leading-tight mb-6">
             <span className="">Partner with a Full-Service</span>
             <span className="block">Design Team for All Your</span>
             <span className="block">Creative Needs</span>

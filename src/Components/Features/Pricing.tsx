@@ -3,7 +3,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="flex flex-col items-center mt-50 text-[#f3f3f3] my-28 w-3/4 mx-auto " id="pricing">
+    <div className="flex flex-col items-center lg:mt-50 text-[#f3f3f3] my-28 lg:w-3/4 w-full lg:mx-auto  mx-auto" id="pricing">
       <button className="   border border-yellow-500/10 bg-yellow-500/10 text-primary p-2  px-4 rounded-b-4xl rounded-t-4xl flex  justify-center items-center gap-2 w-fit mx-auto">
         {" "}
         Pricing{" "}
@@ -16,7 +16,7 @@ const Pricing = () => {
 
 
       <div className="w-11/12 flex lg:flex-row flex-col justify-between mt-10  gap-4">
-        <div className="bg-neutral rounded-4xl border border-neutral-700 p-8 lg:w-1/3  w:full">
+        <div className="bg-neutral rounded-4xl border border-neutral-700 p-8 lg:w-1/3  ">
           <div>
             <p className="text-[#696767]">STANDARD</p>
             <h2 className="text-1xl py-4 flex items-end ">

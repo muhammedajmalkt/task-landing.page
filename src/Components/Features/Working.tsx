@@ -30,7 +30,7 @@ const Working = () => {
         <span>Pay and get started </span>
         <span>the same day </span>
       </h2>
-      <p className="w-1/2 content-center text-center">
+      <p className="lg:w-1/2  w-full text-center ">
         No unnecessary bureaucracy. We focus on getting your ideas and problems
         solved.
       </p>

@@ -48,18 +48,18 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="my-28 w-3/4 mx-auto text-center scrollbar-hidden">
+    <div className="my-28 lg:w-3/4 w-full mx-auto text-center scrollbar-hidden">
       <button className="   border border-yellow-500/10 bg-yellow-500/10 text-primary p-2  px-4 rounded-b-4xl rounded-t-4xl flex  justify-center items-center gap-2 w-fit mx-auto">
         {" "}
         Testimonials{" "}
       </button>
-      <h2 className="flex  flex-col leading-16 mb-18 mt-4 ">
+      <h2 className="flex  flex-col leading-16 mb-18 mt-4 px-2 ">
         {" "}
         Read what our clients are
         <span> saying about us</span>{" "}
       </h2>
 
-      <div className=" relative flex h-[550px] space-x-4 justify-center">
+      <div className=" relative lg:flex h-[550px] space-x-4 justify-center hidden ">
         {/* {shadow} */}
        <div className="absolute bottom-0 left-0 w-full h-[180px] z-50 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
 
@@ -97,8 +97,8 @@ const Testimonials = () => {
         {/* {slide2} */}
         <InfiniteSlider direction="vertical" speed={40} >
           {reviews.slice(0, 4).map((item,i) => (
-            <div key={i}  className="bg-neutral  p-5 border border-neutral-700 rounded-3xl">
-              <div className="flex flex-row gap-5 mb-8">
+            <div key={i}  className="bg-neutral  p-5 border border-neutral-700 rounded-3xl ">
+              <div className="flex flex-row gap-5 mb-8 ">
                 <Image
                   src={item.profile}
                   alt=""
@@ -158,6 +158,46 @@ const Testimonials = () => {
           ))}
         </InfiniteSlider>
       </div>
+
+
+{/* {mobile view} */}
+     <div className=" relative flex h-[550px] space-x-4 justify-center lg:hidden ">
+        {/* {shadow} */}
+       <div className="absolute bottom-0 left-0 w-full h-[180px] z-50 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+       <div className="absolute top-0 left-0 w-full h-[100px] z-50 bg-gradient-to-b from-black via-black/80 to-transparent"></div>
+
+        <InfiniteSlider direction="vertical" speed={40} reverse >
+          {reviews.slice(0, 4).map((item,i) => (
+            <div key={i} className="bg-neutral  p-5 border border-neutral-700 rounded-3xl">
+              <div className="flex flex-row gap-5 mb-8">
+                <Image
+                  src={item.profile}
+                  alt=""
+                  width={50}
+                  height={50}
+                  className="rounded-full object-cover"
+                />
+                <div className="flex flex-col items-start ">
+                  <span>{item.name}</span>
+                  <span>{item.position}</span>
+                </div>
+              </div>
+              <p className="w-[300px] text-start">{item.writing}</p>
+              <div className="space-x-0.5 flex items-center mt-12 ">
+                <span>5.0</span>
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star
+                    size={16}
+                    className="text-primary fill-current "
+                    key={i}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </InfiniteSlider>
+        </div>
+
     </div>
   );
 };

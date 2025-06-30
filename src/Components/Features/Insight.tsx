@@ -16,7 +16,7 @@ const data = [
 ];
 const Insight = () => {
   return (
-    <div className="my-28 w-3/4 mx-auto text-center scrollbar-hidden" id="faq">
+    <div className="my-28 lg:w-3/4  w-11/12 mx-auto text-center scrollbar-hidden" id="faq">
       
       <button className="   border border-yellow-500/10 bg-yellow-500/10 text-primary p-2  px-4 rounded-b-4xl rounded-t-4xl flex  justify-center items-center gap-2 w-fit mx-auto">
         Insight
@@ -26,7 +26,7 @@ const Insight = () => {
       </h2>
 
       {data.map((item,i) => (
-        <p  key={i} className="w-2/3 mx-auto flex  justify-between  mb-2 p-5 bg-neutral rounded-2xl border hover:text-primary border-neutral-700 hover:shadow hover:shadow-amber-400/60  ">
+        <p  key={i} className="lg:w-2/3 w-full  mx-auto flex  justify-between  mb-2 p-5 bg-neutral rounded-2xl border hover:text-primary border-neutral-700 hover:shadow hover:shadow-amber-400/60  ">
           {item} <Plus />{" "}
         </p>
       ))}
